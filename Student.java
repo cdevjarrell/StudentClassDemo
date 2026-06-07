@@ -13,7 +13,7 @@ public class Student {
     private String email;
     private String phoneNumber;
     private String stage;
-    private Sring[] courses; // up to 6 registered courses
+    private String[] courses; // up to 6 registered courses
 
     // Constructor that accepts all properties as parameters for object initialization
     public Student(String name, int age, String email, String phoneNumber, String stage, String[] courses) {
@@ -36,6 +36,6 @@ public class Student {
         for (int i = 0; i < courses.length; i++) {
             System.out.println(" " + (i + 1) + ". " + courses[i]);
         }
-        System.out.println("--------------------------------------")
+        System.out.println("--------------------------------------");
     }
 }
