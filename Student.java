@@ -24,4 +24,18 @@ public class Student {
         this.stage = stage;
         this.courses = courses;
     }
+
+    // Prints all of the student's info, including registered courses
+    public void printMe() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Stage: " + stage);
+        System.out.println("Courses:");
+        for (int i = 0; i < courses.length; i++) {
+            System.out.println(" " + (i + 1) + ". " + courses[i]);
+        }
+        System.out.println("--------------------------------------")
+    }
 }
