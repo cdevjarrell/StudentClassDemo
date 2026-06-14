@@ -29,6 +29,11 @@ public class Student {
         studentCount++; // Increments up each time a new student is created
     }
 
+    // Static method that returns total number of students created
+    public static int getStudentCount() {
+        return studentCount;
+    }
+
     // Prints all of the student's info, including registered courses
     public void printMe() {
         System.out.println("Name: " + name);
