@@ -9,16 +9,16 @@ public class Student {
 
     // Fields
     private String name;
-    private int age;
+    private DateOfBirth dateOfBirth;
     private String email;
     private String phoneNumber;
     private String stage;
     private String[] courses; // up to 6 registered courses
 
     // Constructor that accepts all properties as parameters for object initialization
-    public Student(String name, int age, String email, String phoneNumber, String stage, String[] courses) {
+    public Student(String name, DateOfBirth dateOfBirth, String email, String phoneNumber, String stage, String[] courses) {
         this.name = name;
-        this.age = age;
+        this.dateOfBirth = dateOfBirth;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.stage = stage;
@@ -28,7 +28,7 @@ public class Student {
     // Prints all of the student's info, including registered courses
     public void printMe() {
         System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+        System.out.println("Date of Birth: " + dateOfBirth.getFormattedDate());
         System.out.println("Email: " + email);
         System.out.println("Phone Number: " + phoneNumber);
         System.out.println("Stage: " + stage);
