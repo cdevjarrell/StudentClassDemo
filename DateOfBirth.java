@@ -9,14 +9,14 @@
 public class DateOfBirth {
 
     //Fields
-    private int day;
     private int month;
+    private int day;
     private int year;
 
     // Constructor to init date of birth
-    public DateOfBirth(int day, int month, int year) {
-        this.day = day;
+    public DateOfBirth(int month, int day, int year) {
         this.month = month;
+        this.day = day;
         this.year = year;
     }
 
