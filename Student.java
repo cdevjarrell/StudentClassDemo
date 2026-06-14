@@ -7,6 +7,9 @@
 
 public class Student {
 
+    // Static counter used by all Student objects
+    private static int studentCount = 0;
+
     // Fields
     private String name;
     private DateOfBirth dateOfBirth;
@@ -23,6 +26,7 @@ public class Student {
         this.phoneNumber = phoneNumber;
         this.stage = stage;
         this.courses = courses;
+        studentCount++; // Increments up each time a new student is created
     }
 
     // Prints all of the student's info, including registered courses
